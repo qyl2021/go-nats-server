@@ -11,7 +11,7 @@ RUN mkdir -p src/github.com/nats-io && \
 
 RUN go get github.com/nats-io/nsc
 
-FROM alpine:latest
+FROM alpine:3.15.4
 
 RUN apk add --update ca-certificates && mkdir -p /nats/bin && mkdir /nats/conf
 
